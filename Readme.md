@@ -3,14 +3,16 @@
 * Lets create Two virtual machines in Aws cloud 
   - ansible-control-node
   - workking-node
-  - ![Preview](Images/Img1.PNG)
+![Preview](Images/Img1.PNG)
 * Now login into the both machines
-* Creat a user called  as `devops`in ansible control node and working node
+* Create a user called  as `devops`in ansible control node and working node
 ```
 sudo useradd devops
 ```
 ![Preview](Images/Img3.PNG)
+
 * Give permission for password less for devops
+
   - AWS will not allow password authentication by default, so we need chnage the configuration rules
 ```
 sudo vi /etc/ssh/sshd_config
